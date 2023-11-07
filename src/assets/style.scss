@@ -1,0 +1,110 @@
+@use 'sass:color';
+@import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
+
+$primary: #C0B6FF;
+$secondary: #364379;
+$grey: #5F5F5F;
+$darkbg: #343131;
+$lightbg: #3D3838;
+$offblack: #1D1B1B;
+
+$theme-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'grey': $grey,
+    'darkbg': $darkbg,
+    'lightbg': $lightbg,
+    'offblack': $offblack
+);
+
+$font-sizes: (
+    1: 2rem,
+    2: 1.5rem,
+    3: 1rem,
+    4: .75rem,
+);
+
+$font-family-base: 'Offside', sans-serif;
+
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 5)
+);
+
+@each $spacer, $val in $spacers {
+    .img-{
+        &down-#{$spacer}{
+            object-position: center $val*-1;
+        }
+    }
+}
+
+$opacity: (
+    25: .25,
+    50: .50,
+    75: .75,
+    100: 1,
+);
+
+@each $key, $val in $opacity {
+    .opacity-#{$key}{
+        opacity: $val;
+    }
+}
+
+.img-standsize {
+    height: 35rem;
+    width: auto;
+}
+
+.nav-link:hover {
+    color: lighten($primary,5%) !important;
+}
+
+.fc {
+    width: fit-content;
+}
+
+.sticky-pos {
+    position: fixed;
+    bottom: 10%;
+    right: 10%
+}
+
+.circle-img {
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        transform: translateX(-50%);
+        margin-left: 50%;
+    }
+}
+.qfa p {
+    padding: 0;
+    margin: 0;
+
+    padding-bottom: .5rem;
+}
+
+body {
+    min-height: 100vh;
+}
+
+html {
+    height: 100vh;
+}
+
+.footer {
+    margin-top: auto
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

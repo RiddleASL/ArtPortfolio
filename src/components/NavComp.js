@@ -1,16 +1,17 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 import { ReactComponent as Logo } from "../assets/images/Logo.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const NavComp = () => {  
 	const [curPath, setPath] = useState('')
+	const location = useLocation();
 	
 	useEffect(()=>{
 		console.log(window.location.pathname);
 		setPath(window.location.pathname);
-	},[])
+	},[location])
 
 	const handleClick = (path) => {
 		setPath(path)

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom"
 const Footer =() => {
     return(
         <Container fluid className="bg-offblack py-3 text-primary footer">
-            <h3 className="text-center">My Very Boring Footer :D</h3>
             <Container className="py-5">
                 <ul className="d-flex justify-content-center fs-1 gap-6 list-unstyled">
                     <li><a href="https://discordapp.com/users/1018918217265188904"><Discord /></a></li>

@@ -1,5 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 
+import { useEffect } from "react";
+
 const Art = () => {
     const images = require.context('../assets/images/art', true);
     const imageList = images.keys().map(image => images(image));

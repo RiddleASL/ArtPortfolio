@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import collegedemo from "../assets/images/portfolio/Opera Snapshot_2023-12-22_135540_ca2-colleges.web.app.png";
 import countrydemo from "../assets/images/portfolio/Opera Snapshot_2023-12-22_140831_countries-3a398.web.app.png";
+import comingsoon from "../assets/images/portfolio/comingsoon.jpg";
 
 import Demo from "../components/Demo";
 
@@ -35,6 +36,9 @@ const Portfolio = () => {
 
 				<div className="row py-3">
 					<Col>
+						<img src={countrydemo} alt="College Website" className="img-fluid" />
+					</Col>
+					<Col>
 						<h3>Country Explorer</h3>
 						<p>HTML, CSS, JavaScript, React</p>
 						{/* What i did */}
@@ -46,8 +50,21 @@ const Portfolio = () => {
 						</p>
 						<Demo url="https://countries-3a398.web.app" />
 					</Col>
+				</div>
+
+				<hr className="border-3 roudned"/>
+
+				<div className="row py-3">
 					<Col>
-						<img src={countrydemo} alt="College Website" className="img-fluid" />
+						<h3>Whispering Grove</h3>
+						<p>C#, Unity, Blender, Substance Painter</p>
+						{/* What i did */}
+						<p>
+							I designed and developed a Game that allows the player to transform into vessels to explore worlds. The game uses Unity to create the game world and C# to create the game logic. The game uses Blender to create 3D models and Substance Painter to texture the models. The game is currently not downloadable nor finished but I am working on it. Hopefully it will be finished and downloadble soon.
+						</p>
+					</Col>
+					<Col>
+						<img src={comingsoon} alt="Coming Soon" className="img-fluid" />
 					</Col>
 				</div>
 			</Container>

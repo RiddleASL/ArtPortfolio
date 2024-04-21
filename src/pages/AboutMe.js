@@ -19,7 +19,7 @@ const AboutMe = () => {
                         <Col className="p-0 m-0 fs-2" md={6} sm={1}>
                             <h2 className="text-center">Who is Riddle?</h2>
                             <p>
-                                Im a 20 year old, 3rd year college student! I love art, games, movies, music and learning in general.
+                                Im a 21 year old, 3rd year college student! I love art, games, movies, music and learning in general.
                                 Right now, i'm focusing on college. I hope to graduate and focus on game development!
                                 <br/><br/>
                                 Im not too sure what else write in this so heres a few quick fire questions :D 
